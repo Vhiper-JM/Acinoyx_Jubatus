@@ -1,0 +1,60 @@
+{% extends "base.html" %} {% block title %}Registro{% endblock %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style_registro.css') }}">
+  <title> registro Acinoyx jubatus</title>
+</head>
+<body>
+  <section class="form-register">
+    <div align="center"> <img src="logo.jpeg"> <img/> </div>
+    <h3>Acinoyx jubatus</h3>
+    <h4>muy pronto rugirás con tu manada</h4>
+    <input 
+      class="form-control" 
+      type="text" 
+      id="nombre" 
+      name="nombre" 
+      placeholder="nombre completo" 
+    />
+    <input 
+      class="form-control" 
+      type="email" 
+      id="correo" 
+      name="correo" 
+      placeholder="correo electrónico" 
+    />
+    <input 
+      class="form-control" 
+      type="number" 
+      id="edad" 
+      name="edad" 
+      placeholder="edad" 
+    />
+    <input 
+      class="form-control" 
+      type="password" 
+      id="Contraseña" 
+      name="Contraseña" 
+      placeholder="contraseña" 
+    />
+    
+    
+  <p> <input type="checkbox" id=condiciones> acepto las <a href="#">politicas de privacidad y condiciones de uso</a> </p>
+  <button type="submit" class="btn-primary">Registrarse</button>
+  <p>¿Tienes una cuenta?</p>
+  <button class="btn-primary" onclick="location.href='/'">Iniciar sesión</button>
+  </section> 
+</div>
+  <div id="footer"> 
+    Copyright &copy; Acinoyx Jubatus 2021.
+  </div>
+</body>
+</html>
+{% endblock %}

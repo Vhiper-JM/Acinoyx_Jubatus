@@ -1,0 +1,78 @@
+{% extends "base.html" %} {% block title %}Resultados de Busqueda{% endblock %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style_resultados_busqueda.css') }}">
+        <title>Acinoyx Jubatus - Resultados Busqueda</title>
+    </head>
+
+    <body>
+        <div id="container">
+            <div id="header">
+                <h1>Acinoyx Jubatus</h1>
+            </div>
+            <div id="content">
+                <div id="search">
+                    <form method="GET">
+                        <input 
+                            class="form-control" 
+                            type="text" 
+                            id="busqueda_resultados_busqueda" 
+                            name="busqueda_resultados_busqueda" 
+                            placeholder="Buscar" 
+                        />
+                        <div class="busqueda">
+                            <a href="/resultados_busqueda">
+                                <img class="foto" src="{{ url_for('static',filename='images_feed/busqueda.jpeg') }}">
+                            </a>
+                        </div>
+                    </form>
+                    <div id="nav">
+                        <h3>Categorias</h3>
+                        <ul>
+                            <div>
+                                <label for="male">Hashtags</label>
+                                <input type="radio" name="categoria_busqueda" id="hashtags" value="hashtags">
+                              </div>
+                              <div>
+                                <label for="female">Cuentas</label>
+                                <input type="radio" name="categoria_busqueda" id="cuentas" value="cuentas">
+                              </div>
+                              <div>
+                                <label for="female">Lugares</label>
+                                <input type="radio" name="categoria_busqueda" id="lugares" value="lugares">
+                              </div>
+                            <p><button type="submit" class="btn-primary">Historial</button></p>
+                        </ul>
+                    </div>
+                </div>
+                <div id="main">
+                    <h2>Resultados de Busqueda</h2>
+                <p>Texto ejemplo 1</p>
+                <p>Texto ejemplo 2</p>
+                <p>Texto ejemplo 3</p>
+                <p>Texto ejemplo 4</p>
+                <p>Texto ejemplo 5</p>
+                <p>Texto ejemplo 6</p>
+                <p>Texto ejemplo 7</p>
+                <p>Texto ejemplo 8</p>
+                <p>Texto ejemplo 9</p>
+                </div>
+
+            </div>
+            <div id="footer">
+                Copyright &copy; Acinoyx Jubatus 2021.
+            </div>
+        </div>
+
+    </body>
+
+
+</html>
+{% endblock %}
