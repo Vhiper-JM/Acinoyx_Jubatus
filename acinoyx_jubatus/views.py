@@ -19,3 +19,16 @@ def resultados_busqueda():
 @views.route('/registro', methods=['GET', 'POST'])
 def registro():
     return render_template("registro.html")
+
+@views.route('/dashboard_administrativo', methods=['GET', 'POST'])
+def dashboard_administrativo():
+    return render_template("dashboard_administrativo.html")
+
+@views.route('/detalle_post_general', methods=['GET', 'POST'])
+def detalle_post_general():
+    return render_template("detalle_post_general.html")
+
+@views.route('/detalle_post_2', methods=['GET', 'POST'])
+def detalle_post_2():
+    return render_template("detalle_post_2.html")
+

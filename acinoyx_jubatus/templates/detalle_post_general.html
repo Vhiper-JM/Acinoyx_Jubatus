@@ -1,0 +1,99 @@
+{% extends "base.html" %} {% block title %}Detalles Generales post{% endblock %}
+
+{% block content %}
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Detalle_Post_General</title>
+		<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/esquema.css') }}">
+		<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/detalle_post_general.css') }}">
+	</head>
+	<body>
+		<div id="wb_Shape1" style="position:absolute;left:137px;top:12px;width:1136px;height:906px;filter:alpha(opacity=70);opacity:0.70;z-index:0;">
+			<img src="{{ url_for('static',filename='images_dashboard/img0001.png') }}" id="Shape1" alt="" style="width:1136px;height:906px;"></div>
+		<div id="wb_Shape5" style="position:absolute;left:292px;top:138px;width:409px;height:491px;z-index:1;">
+			<img src="{{ url_for('static',filename='images_dashboard/img0004.png') }}" id="Shape5" alt="" style="width:409px;height:491px;"></div>
+		<div id="wb_Shape4" style="position:absolute;left:292px;top:780px;width:441px;height:129px;z-index:2;">
+			<img src="{{ url_for('static',filename='images_dashboard/img0005.png') }}" id="Shape4" alt="" style="width:441px;height:129px;"></div>
+		<div id="wb_Image2" style="position:absolute;left:308px;top:162px;width:376px;height:449px;z-index:3;">
+			<img src="{{ url_for('static',filename='images_dashboard/item-04.jpg') }} id="Image2" alt=""></div>
+		<div id="wb_Pagination1" style="position:absolute;left:374px;top:629px;width:260px;height:38px;z-index:4;">
+			<ul id="Pagination1">
+				<li class="disabled"><a href="#">&laquo; Prev</a></li>
+				<li><a href="">1</a></li>
+				<li><a href="">2</a></li>
+				<li><a href="">3</a></li>
+				<li><a href="">4</a></li>
+				<li><a href="/detalle_post_2">Next &raquo;</a></li>
+			</ul>
+		</div>
+		<input type="text" id="Editbox2" style="position:absolute;left:318px;top:789px;width:373px;height:18px;line-height:18px;z-index:5;" name="Editbox2" value="Comentario 1">
+		<input type="text" id="Editbox3" style="position:absolute;left:318px;top:828px;width:373px;height:18px;line-height:18px;z-index:6;" name="Editbox2" value="Comentario 2">
+		<input type="text" id="Editbox4" style="position:absolute;left:318px;top:873px;width:373px;height:18px;line-height:18px;z-index:7;" name="Editbox2" value="Comentario 3">
+		<div id="wb_Shape10" style="position:absolute;left:833px;top:36px;width:330px;height:71px;z-index:8;">
+			<img src="{{ url_for('static',filename='images_dashboard/img0006.png') }}" id="Shape10" alt="" style="width:330px;height:71px;"></div>
+		<div id="wb_Shape9" style="position:absolute;left:354px;top:38px;width:347px;height:71px;z-index:9;">
+			<img src="{{ url_for('static',filename='images_dashboard/img0007.png') }}" id="Shape9" alt="" style="width:347px;height:71px;"></div>
+		<div id="wb_Shape7" style="position:absolute;left:718px;top:109px;width:520px;height:65px;z-index:10;">
+			<img src="{{ url_for('static',filename='images_dashboard/img0008.png') }}" id="Shape7" alt="" style="width:520px;height:65px;"></div>
+		<div id="wb_Image1" style="position:absolute;left:188px;top:40px;width:63px;height:63px;z-index:11;">
+			<img src="{{ url_for('static',filename='images_dashboard/home.png') }}" id="Image1" alt=""></div>
+		<input type="text" id="Editbox1" style="position:absolute;left:362px;top:59px;width:316px;height:18px;line-height:18px;z-index:12;" name="Editbox1" value="Busqueda">
+		<label for="" id="Label2" style="position:absolute;left:924px;top:119px;width:182px;height:18px;line-height:18px;z-index:13;">Cambiar</label>
+		<div id="wb_Image9" style="position:absolute;left:833px;top:38px;width:55px;height:55px;z-index:14;">
+			<img src="{{ url_for('static',filename='images_dashboard/mensajes.png') }}" id="Image9" alt=""></div>
+		<div id="wb_Text1" style="position:absolute;left:880px;top:61px;width:68px;height:16px;z-index:15;text-align:left;">
+			<span style="color:#000000;font-family:Arial;font-size:13px;">Mensajes</span></div>
+		<div id="wb_Image10" style="position:absolute;left:948px;top:42px;width:60px;height:58px;z-index:16;">
+			<img src="{{ url_for('static',filename='images_dashboard/post.png') }}" id="Image10" alt=""></div>
+		<div id="wb_Text2" style="position:absolute;left:1020px;top:63px;width:45px;height:16px;z-index:17;text-align:left;">
+			<span style="color:#000000;font-family:Arial;font-size:13px;">Post</span></div>
+		<div id="wb_Image11" style="position:absolute;left:1076px;top:35px;width:59px;height:56px;z-index:18;">
+			<img src="{{ url_for('static',filename='images_dashboard/perfil.png') }}" id="Image11" alt=""></div>
+		<div id="wb_Text3" style="position:absolute;left:1094px;top:91px;width:45px;height:16px;z-index:19;text-align:left;">
+			<span style="color:#000000;font-family:Arial;font-size:13px;">Perfil</span></div>
+		<div id="wb_Image12" style="position:absolute;left:838px;top:111px;width:41px;height:42px;z-index:20;">
+			<img src="{{ url_for('static',filename='images_dashboard/perfil.png') }}" id="Image12" alt=""></div>
+		<div id="wb_Shape8" style="position:absolute;left:251px;top:47px;width:89px;height:49px;z-index:21;">
+			<img src="{{ url_for('static',filename='images_dashboard/img0009.png') }}" id="Shape8" alt="" style="width:89px;height:49px;"></div>
+		<div id="wb_Shape3" style="position:absolute;left:714px;top:193px;width:520px;height:366px;z-index:22;">
+			<img src="{{ url_for('static',filename='images_dashboard/img0010.png') }}" id="Shape3" alt="" style="width:520px;height:366px;"></div>
+		<label for="" id="Label9" style="position:absolute;left:946px;top:212px;width:182px;height:18px;line-height:18px;z-index:23;">Amigos</label>
+		<div id="wb_Image13" style="position:absolute;left:829px;top:266px;width:73px;height:68px;z-index:24;">
+			<img src="{{ url_for('static',filename='images_dashboard/reto.png') }}" id="Image13" alt=""></div>
+		<div id="wb_Image14" style="position:absolute;left:834px;top:360px;width:68px;height:68px;z-index:25;">
+			<img src="{{ url_for('static',filename='images_dashboard/reto2.png') }}" id="Image14" alt=""></div>
+		<div id="wb_Image15" style="position:absolute;left:1053px;top:254px;width:80px;height:80px;z-index:26;">
+			<img src="{{ url_for('static',filename='images_dashboard/reto2.png') }}" id="Image15" alt=""></div>
+		<div id="wb_Image16" style="position:absolute;left:1053px;top:350px;width:80px;height:80px;z-index:27;">
+			<img src="{{ url_for('static',filename='images_dashboard/reto.png') }}" id="Image16" alt=""></div>
+		<label for="" id="Label10" style="position:absolute;left:947px;top:302px;width:73px;height:18px;line-height:18px;z-index:28;">Amigo 1</label>
+		<label for="" id="Label11" style="position:absolute;left:947px;top:381px;width:73px;height:18px;line-height:18px;z-index:29;">Amigo 3</label>
+		<label for="" id="Label12" style="position:absolute;left:1153px;top:302px;width:73px;height:18px;line-height:18px;z-index:30;">Amigo 2</label>
+		<label for="" id="Label13" style="position:absolute;left:1153px;top:381px;width:73px;height:18px;line-height:18px;z-index:31;">Amigo 4</label>
+		<div id="wb_Image17" style="position:absolute;left:838px;top:457px;width:68px;height:68px;z-index:32;">
+			<img src="{{ url_for('static',filename='images_dashboard/reto2.png') }}" id="Image17" alt=""></div>
+		<div id="wb_Image18" style="position:absolute;left:1057px;top:447px;width:80px;height:80px;z-index:33;">
+			<img src="{{ url_for('static',filename='images_dashboard/reto.png') }}" id="Image18" alt=""></div>
+		<label for="" id="Label14" style="position:absolute;left:951px;top:478px;width:73px;height:18px;line-height:18px;z-index:34;">Amigo 5</label>
+		<label for="" id="Label15" style="position:absolute;left:1157px;top:478px;width:73px;height:18px;line-height:18px;z-index:35;">Amigo 6</label>
+		<div id="wb_Shape2" style="position:absolute;left:325px;top:664px;width:359px;height:107px;z-index:36;">
+			<img src="{{ url_for('static',filename='images_dashboard/img0011.png') }}" id="Shape2" alt="" style="width:359px;height:107px;"></div>
+		<label for="" id="Label6" style="position:absolute;left:437px;top:664px;width:182px;height:18px;line-height:18px;z-index:37;">Estadisticas de Post</label>
+		<div id="wb_Image3" style="position:absolute;left:347px;top:691px;width:69px;height:69px;z-index:38;">
+			<img src="{{ url_for('static',filename='images_dashboard/comentar.png') }}") }}" id="Image3" alt=""></div>
+		<div id="wb_Text5" style="position:absolute;left:361px;top:747px;width:76px;height:16px;z-index:39;text-align:left;">
+			<span style="color:#000000;font-family:Arial;font-size:13px;">Comentar</span></div>
+		<div id="wb_Image4" style="position:absolute;left:443px;top:691px;width:69px;height:69px;z-index:40;">
+			<img src="{{ url_for('static',filename='images_dashboard/megusta.png') }}" id="Image4" alt=""></div>
+		<div id="wb_Text6" style="position:absolute;left:450px;top:747px;width:64px;height:16px;z-index:41;text-align:left;">
+			<span style="color:#000000;font-family:Arial;font-size:13px;">Me gusta</span></div>
+		<div id="wb_Image5" style="position:absolute;left:546px;top:699px;width:52px;height:53px;z-index:42;">
+			<img src="{{ url_for('static',filename='images_dashboard/compartir.png') }}" id="Image5" alt=""></div>
+		<div id="wb_Text7" style="position:absolute;left:546px;top:747px;width:81px;height:16px;z-index:43;text-align:left;">
+			<span style="color:#000000;font-family:Arial;font-size:13px;">Comentario</span></div>
+	</body>
+</html>
+
+{% endblock %}
