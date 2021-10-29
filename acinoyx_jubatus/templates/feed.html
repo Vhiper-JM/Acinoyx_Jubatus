@@ -2,269 +2,67 @@
 
 {% block content %}
 
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asinoyx Jubatus</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap" rel="stylesheet">
-
-    <style>
-        .main-title {
-            text-align:left;
-            font-family: Mulish; 
-            display: inline-block;
-            width: 25%;   
-            font-size: 20px; 
-            margin-bottom: 20px;
-        }
-        .logo {
-            display: inline-block;
-            margin-top: 16px;
-            width: 50px;
-        }
-        .navegacion {
-
-            width: 25%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .icono{
-            position: relative;
-            right: 10px;
-            width: 40px;
-            display: inline-block;
-        }
-
-        .nombredeicono{
-
-            display: inline-block;
-        }
-
-        .posts{
-
-            width:50%;
-            margin-right: 10px;
-        }
-        .post1 {
-            background-color: azure;
-            outline: auto;
-            margin-top: 10px;
-
-        }
-       
-        .foto {
-
-            display: inline-block;
-            margin-top: 16px;
-            width: 50px;
-        }
-
-        .megusta{
-
-            width: 15px;
-        }
-
-        .publicar {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .busqueda {
-            margin: 0px auto 0px auto;
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-        }
-
-        .publicacion {
-            margin: 0px auto 0px auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .calificacion {
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            height: 15px;
-        }
-
-        .usuarios {
-            display: flex;
-        }
-        
-        
-        body {
-            margin: 0px;
-            display: flex;
-            font-family: Mulish;
-            background: rgb(83,181,175);
-            background: linear-gradient(90deg, rgba(83,181,175,1) 6%, rgba(68,196,189,1) 38%, rgba(237,245,246,1) 100%);
-        }
-
-        #footer {
-            position: relative;
-            right: 15%;
-            clear: both;
-            width: 130%;
-            padding: 10px;
-            background-color: #999999;
-            color: white;
-            text-align: right;
-        }
-    </style>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/feed.css') }}">
 </head>
-<body>
-<div class = "navegacion">
-    <div class="nombre">
-        <img class="logo" src="{{ url_for('static',filename='images_feed/ascinoyx.jpeg') }}">
-        <h1 class="main-title"> Ascinoyx Jubatus</h1>
-    </div>
 
-    <div class = "rutadenavegacion">
-        <img class="icono" src="{{ url_for('static',filename='images_feed/icono.jpeg') }}">
-        <p class="nombredeicono"> Inicio </p>
-    </div>
-    <div class = "rutadenavegacion">
-        <img class="icono" src="{{ url_for('static',filename='images_feed/mensajes.jpeg') }}">
-        <p class="nombredeicono"> Mensajes </p>
-    </div>
-    <div>
-        <img class="icono" src="{{ url_for('static',filename='images_feed/perfil.jpeg') }}">
-        <p class="nombredeicono"> Perfil </p>
-    </div>
-</div>   
-
-<div class="posts">
-    
-    <div class="publicar">
-        <img class="foto" src="{{ url_for('static',filename='images_feed/fotoperfil.jpeg') }}">
-        <input
-        class="form-control"  
-        type="text"
-        id="rugir"
-        name="rugir" 
-        placeholder="Que quieres rugir hoy?"
-        />
-        <button type="submit" class="btn-primary">Rugir!</button>
-    </div>
-    
-    <div class="post1">
-        <div class="usuarios">
-            <img class="foto" src="{{ url_for('static',filename='images_feed/fotoamigo1.jpeg') }}">
-            <p class="amigo1"> Guepardo1 </p>
-        </div>
-        
-        <div class="publicacion">
-            <img class="postimage" src="{{ url_for('static',filename='images_feed/paisaje.jpeg') }}">
-        </div>
-        
-        
-        
-        <div class="calificacion">
-            
-            <img class="megusta" src="{{ url_for('static',filename='images_feed/like.jpeg') }}">
-            <img class="megusta" src="{{ url_for('static',filename='images_feed/comentario.jpeg') }}">
-            
+<div class="container">
+    <div class="search">
+        <div class="search_text">
+            <p>Busca Amigos<p>
         </div>
 
-
-        
-    </div>
-    
-    
-    <div class="post1">
-        
-        <div class="usuarios">
-            
-            <img class="foto" src="{{ url_for('static',filename='images_feed/fotoamigo1.jpeg') }}">
-            <p class="amigo1"> Guepardo2 </p>
-        </div>
-        
-        <div class="publicacion">
-            
-            <img class="postimage" src="{{ url_for('static',filename='images_feed/mascotas.jpeg') }}">
-            
-        </div>
-        
-        <div class="calificacion">
-            
-            <img class="megusta" src="{{ url_for('static',filename='images_feed/like.jpeg') }}">
-            <img class="megusta" src="{{ url_for('static',filename='images_feed/comentario.jpeg') }}">
-            
-        </div>            
-
-        
-    </div>
-
-<br/>
-
-
-<div class="columna3">
-    <div class="busqueda">
-        <input
-            class="form-control"  
-            type="text"
-            id="busqueda_feed"
-            name="busqueda_feed" 
-            placeholder="Buscar"
-        />
-        <a href="/resultados_busqueda">
-            <img class="foto" src="{{ url_for('static',filename='images_feed/busqueda.jpeg') }}">
-        </a>
-</div> 
-    
-    
-    
-</div>
-
-    <div class="tumanada">
-        
-        <h4> Tu manada </h4>
-        
-        <div class="amigos">
-            
-            <img class="icono" src="{{ url_for('static',filename='images_feed/fotoamigo1.jpeg') }}">
-            <p class="nombredeicono"> Guepardo 1 </p>
-
-        </div>
-
-        <div class="amigos">
-
-            <img class="icono" src="{{ url_for('static',filename='images_feed/fotoamigo2.jpeg') }}">
-            <p class="nombredeicono"> Guepardo 2 </p>
-            
-        </div>
-
-        <div class="amigos">
-
-            <img class="icono" src="{{ url_for('static',filename='images_feed/fotoamigo3.jpeg') }}">
-            <p class="nombredeicono"> Guepardo 3 </p>
-            
-        </div>
-
-
-
-
+        <input type="text" name="search_bar" id="">
+        <button type="submit" class="btn btn-primary">Buscar</button>
 
     </div>
+
+    <div class="create_post">
+        <a href="/post" class="btn btn-primary">Nueva Publicacion</a>
+    </div>
+
+    {% for post in posts %}
+
+    <div class="post">
+        <div class="post_user">
+            <img class="post_user_picture" src="{{ url_for('static',filename='images_feed/fotoamigo1.jpeg') }}">
+            <p class="post_user_name"> {{ post.3 }} </p>
+        </div>
+        <div class="post_title">
+            <p>{{post.1}}</p>
+        </div>
+        <div class="post_date">
+            <p>{{post.2}}</p>
+        </div>
+        <div class="post_detail">
+            {% if post.0 %}
+                <div class="post_image_block">
+                    <img class="post_image" src="static/images/{{ post.0 }}" alt="No Image">
+                </div>
+            {% endif %}
+            <div class="post_actions_block">
+                <div class="post_actions">
+                    <div id="container" class="container">
+                        <h2>Comentarios</h2>
+                        <form id="container_caja" action="">
+                            <textarea class="caja_comentario" placeholder="Deje un comentario..."></textarea>
+                            <div class="btn">
+                                <input type="submit" value="Comentar">
+                                <button>Cancelar</button>
+                            </div>
+                        </form>
+                    </div>
+                    <input type="image" id="megusta" name="megusta" alt="Me Gusta" src="{{ url_for('static',filename='images_feed/like.jpeg') }}"/>
+                    <input type="image" id="comentario" name="comentario" alt="Comentario" src="{{ url_for('static',filename='images_feed/comentario.jpeg') }}"/>
+                </div>
+            </div>
+        </div>
+        <div class="comments">
+
+        </div>
+    </div>
+    {% endfor %}
+
 
 </div>
-
-    <div id="footer">
-        Copyright &copy; Acinoyx Jubatus 2021.
-    </div>
-    
-</body>
-</html>
 {% endblock %}

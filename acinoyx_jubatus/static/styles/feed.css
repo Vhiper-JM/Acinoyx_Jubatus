@@ -1,0 +1,103 @@
+.search {
+    display: flex;
+    margin: 10px auto 10px auto;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    outline: auto;
+    background-color: azure;
+}
+.search_text {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+
+.search_text p {
+    margin: 0;
+}
+
+.create_post {
+    display: flex;
+    margin: 10px auto 10px auto;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    outline: auto;
+    background-color: azure;
+}
+
+.megusta{
+    width: 15px;
+}
+
+.comentario{
+    width: 15px;
+}
+
+.post {
+    margin: 30px auto 10px auto;
+    width: 600px;
+    padding-bottom: 18%;
+    padding-left: 1%;
+    background-color: azure;
+    outline: auto;    
+}
+
+.post_user {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    width: 450px;
+}
+
+.post_title p {
+    font-style: italic;
+    margin-left: 10px;
+}
+
+.post_user_picture {
+    width: 50px;
+    margin-right: 15px;
+}
+
+.post_user_name {
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.post_detail {
+    margin: 0px auto 0px auto;
+    width: 450px;
+}
+
+.post_image_block {
+    margin: 0px auto 0px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.post_image {
+    width: 350px;
+}
+
+.post_actions {
+    display: flex;
+    justify-content: left;
+    height: 40px;
+    padding: 10px;
+    left: 20%;
+}
+
+.container {
+    padding: 2%;
+    
+}
+
+.caja_comentario {
+    width: 100%;
+    border: 2px solid #333;
+    padding: 5%;
+    padding-left: 10%;
+}
