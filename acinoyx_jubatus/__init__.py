@@ -21,6 +21,7 @@ def crear_app():
     app.config['SECRET_KEY'] = '1ab2c3d4e5f6g7'
     app.config['UPLOAD_FOLDER']="static/images"
     app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{DB_NAME}'
+    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     db.init_app(app)
 
 
